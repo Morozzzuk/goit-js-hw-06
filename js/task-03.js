@@ -23,5 +23,5 @@ const imageList = images
   return `<li><img src ='${url}' ${alt} width = "320" </li>`;
   })
   .join('');
-galeryListEl.insertAdjacentHTML('afterbegin', imageList);
+galeryListEl.insertAdjacentHTML('beforeend', imageList);
 console.log(imageList);
