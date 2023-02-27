@@ -20,8 +20,7 @@ const galeryListEl = document.querySelector('ul');
 console.log(galeryListEl);
 const imageList = images
   .map(({ url, alt }) => {
-  return `<li><img src ='${url}' ${alt} width = "320" </li>`;
-  })
+  return `<li><img src ='${url}' ${alt} width = "320" </li>`;})
   .join('');
 galeryListEl.insertAdjacentHTML('beforeend', imageList);
 console.log(imageList);
